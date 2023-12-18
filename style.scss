@@ -1,0 +1,86 @@
+
+@font-face {
+    font-family: spark;
+    src: url('./HappyLucky-gxnZP.ttf');
+}
+
+body{
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: spark;
+}
+
+
+.hello{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 300px;
+    width: 902px;
+    .title{
+        color: black;
+        margin-top: 0;
+        font-size: 6rem;
+        margin-bottom: 0;
+    }
+    .text{
+        color: #8DE0EE;
+        font-size: 2.25rem;
+        font-weight:800;
+        margin: 20px 0 0;
+        letter-spacing: 5px;
+    }
+}
+
+.images-container{
+    margin: 46px auto 0px;
+    background-color: #61d4e7 ;
+    position: relative;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 6rem;
+    width: 100%;
+    .images{
+        grid-gap: 2rem;
+        padding-inline: 2rem;
+        margin-top: -8rem;
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+        align-items: center;
+        width: 902px;
+        .img{
+            width: 430px;
+            height: 300px;
+            object-fit: cover;
+        }
+
+    }
+
+}
+
+
+//@media screen and ( max-width : 768px ) {
+@media screen and ( max-width : 980px ) {
+    .hello{
+        display: flex;
+        align-items: flex-start;
+        padding-bottom: 4rem;
+        width: auto;
+        margin-inline:2rem;
+    }
+    .images{
+        display: flex !important    ;
+        flex-direction: column;
+        align-items: center;
+        .img{
+            width : 500px !important;
+            height: 350px !important;
+        }
+    }
+    
+}
+
+
